@@ -1,7 +1,7 @@
 Package.describe({
     name: "rps:standard-plugins",
     summary: "This is a simple wrapper for all the plug-ins that are use by RPS.",
-    version: "0.0.86",
+    version: "0.0.9",
     git: "https://github.com/<username>/rps-standard-plugins.git",
 });
 
@@ -35,8 +35,8 @@ Package.onUse(function (api) {
         'cfs:gridfs@0.0.33',
         'rps:autoform-file@0.4.21',
         'sacha:spin@2.3.1',
-        'check@1.1.0'
-
+        'check@1.1.0',
+        'email@1.0.8'
     ];
 
     api.use(packages);
