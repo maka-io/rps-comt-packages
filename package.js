@@ -1,7 +1,7 @@
 Package.describe({
     name: "rps:standard-plugins",
     summary: "This is a simple wrapper for all the plug-ins that are use by RPS.",
-    version: "0.0.9",
+    version: "0.1.2_4",
     git: "https://github.com/<username>/rps-standard-plugins.git",
 });
 
@@ -21,12 +21,13 @@ Package.onUse(function (api) {
         'reload@1.1.4',
         'zimme:iron-router-active@2.0.1',
         'twbs:bootstrap@3.3.6',
+        'tsega:bootstrap3-datetimepicker@=3.1.3_3',
+        'aldeed:autoform-bs-datetimepicker@1.0.6',
         'okgrow:router-autoscroll@0.1.7',
         'logging@1.0.8',
         'fortawesome:fontawesome@4.5.0',
         'ejson@1.0.7',
         'random@1.0.5',
-        'aldeed:autoform-bs-datepicker@1.1.1',
         'aldeed:collection2@2.9.0',
         'accounts-password@1.1.4',
         'ian:accounts-ui-bootstrap-3@1.1.4',
@@ -36,7 +37,9 @@ Package.onUse(function (api) {
         'rps:autoform-file@0.4.21',
         'sacha:spin@2.3.1',
         'check@1.1.0',
-        'email@1.0.8'
+        'email@1.0.8',
+        'fullcalendar:fullcalendar@2.6.1_1',
+        'percolate:synced-cron@1.3.0'
     ];
 
     api.use(packages);
