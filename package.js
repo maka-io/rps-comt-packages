@@ -1,7 +1,7 @@
 Package.describe({
     name: "rps:comt-packages",
     summary: "This is a simple wrapper for all the packages used by comt-ui.",
-    version: "0.0.5_3",
+    version: "0.0.6_2",
     git: "https://github.com/<username>/rps-comt-packages.git",
 });
 
@@ -18,6 +18,8 @@ Package.onUse(function (api) {
         'cfs:standard-packages@0.5.9',
         'cfs:gridfs@0.0.33',
         'cfs:autoform@2.2.1',
+        'tomi:upload-server@1.3.3',
+        'tomi:upload-jquery@2.2.2',
         'zimme:active-route@2.3.2',
         'zimme:iron-router-active@2.0.1',
         'minimongo',
@@ -184,6 +186,7 @@ Package.onUse(function (api) {
 	api.addFiles('client/scripts/toggle-state.js', 'client')
 	api.addFiles('client/scripts/trigger-resize.js', 'client')
 	api.addFiles('client/scripts/utils.js', 'client')
+	api.addFiles('client/scripts/md5.min.js', 'client')
 	api.addFiles('client/stylesheets/01_bootstrap.less', 'client')
 	api.addFiles('client/stylesheets/02_app.less', 'client')
 	api.addFiles('client/stylesheets/app/alerts.import.less', 'client')
