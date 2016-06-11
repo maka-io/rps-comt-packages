@@ -1,17 +1,17 @@
 // LOAD CUSTOM CSS
-// ----------------------------------- 
+// -----------------------------------
 
 (function(window, document, $, undefined){
 
   $(function(){
 
     $(document).on('click', '[data-load-css]', function (e) {
-        
+
       var element = $(this);
 
       if(element.is('a'))
         e.preventDefault();
-      
+
       var uri = element.data('loadCss'),
           link;
 
