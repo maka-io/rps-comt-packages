@@ -1,7 +1,7 @@
 Package.describe({
     name: "maka:comt-packages",
     summary: "This is a simple wrapper for all the packages used by comt-ui.",
-    version: "0.0.2",
+    version: "0.0.5",
     git: "https://github.com/<username>/rps-comt-packages.git",
 });
 
@@ -23,7 +23,6 @@ Package.onUse(function (api) {
         'mongo-livedata',
         'templating',
         'momentjs:moment@2.12.0',
-        'jquery',
         'less@2.5.1',
         'reactive-dict@1.1.3',
         'reactive-var@1.0.6',
@@ -104,22 +103,22 @@ Package.onUse(function (api) {
 	// api.addFiles('client/lib/ika-jvectormap/jquery-jvectormap-1.2.2.min.js', 'client')
 	// api.addFiles('client/lib/ika-jvectormap/jquery-jvectormap-us-mill-en.js', 'client')
 	// api.addFiles('client/lib/ika-jvectormap/jquery-jvectormap-world-mill-en.js', 'client')
-	// api.addFiles('client/lib/jqcloud2/dist/jqcloud.css', 'client')
-	// api.addFiles('client/lib/jqcloud2/dist/jqcloud.js', 'client')
-	// api.addFiles('client/lib/jqgrid/css/ui.jqgrid.css', 'client')
-	// api.addFiles('client/lib/jqgrid/js/jquery.jqGrid.js', 'client')
+	api.addFiles('client/lib/jqcloud2/dist/jqcloud.css', 'client')
+	api.addFiles('client/lib/jqcloud2/dist/jqcloud.js', 'client');
+	api.addFiles('client/lib/jqgrid/css/ui.jqgrid.css', 'client');
+	api.addFiles('client/lib/jqgrid/js/jquery.jqGrid.js', 'client');
 	// api.addFiles('client/lib/jqgrid/js/i18n/grid.locale-en.js', 'client')
-	// api.addFiles('client/lib/jquery-classyloader/js/jquery.classyloader.min.js', 'client')
-	// api.addFiles('client/lib/jquery-easing/js/jquery.easing.js', 'client')
-	// api.addFiles('client/lib/jquery-easy-pie-chart/dist/jquery.easypiechart.js', 'client')
-	// api.addFiles('client/lib/jQuery-gMap/jquery.gmap.min.js', 'client')
-	// api.addFiles('client/lib/jquery-inputmask/dist/jquery.inputmask.bundle.js', 'client')
-	// api.addFiles('client/lib/jquery-knob/js/jquery.knob.js', 'client')
-	// api.addFiles('client/lib/jquery-localize-i18n/dist/jquery.localize.js', 'client')
-	// api.addFiles('client/lib/jquery-steps/build/jquery.steps.js', 'client')
-	// api.addFiles('client/lib/jQuery-Storage-API/jquery.storageapi.js', 'client')
-	// api.addFiles('client/lib/jquery-validation/dist/jquery.validate.js', 'client')
-	// api.addFiles('client/lib/jqueryui-touch-punch/jquery.ui.touch-punch.min.js', 'client')
+	api.addFiles('client/lib/jquery-classyloader/js/jquery.classyloader.min.js', 'client');
+	api.addFiles('client/lib/jquery-easing/js/jquery.easing.js', 'client');
+	api.addFiles('client/lib/jquery-easy-pie-chart/dist/jquery.easypiechart.js', 'client');
+	api.addFiles('client/lib/jQuery-gMap/jquery.gmap.min.js', 'client');
+	api.addFiles('client/lib/jquery-inputmask/dist/jquery.inputmask.bundle.js', 'client');
+	api.addFiles('client/lib/jquery-knob/js/jquery.knob.js', 'client');
+	api.addFiles('client/lib/jquery-localize-i18n/dist/jquery.localize.js', 'client');
+	api.addFiles('client/lib/jquery-steps/build/jquery.steps.js', 'client');
+	api.addFiles('client/lib/jQuery-Storage-API/jquery.storageapi.js', 'client');
+	api.addFiles('client/lib/jquery-validation/dist/jquery.validate.js', 'client');
+	api.addFiles('client/lib/jqueryui-touch-punch/jquery.ui.touch-punch.min.js', 'client');
 	// api.addFiles('client/lib/loaders/loaders.css', 'client')
 	// api.addFiles('client/lib/matchMedia/matchMedia.js', 'client')
 	// api.addFiles('client/lib/mjolnic-bootstrap-colorpicker/dist/css/bootstrap-colorpicker.css', 'client')
@@ -163,15 +162,15 @@ Package.onUse(function (api) {
 	// api.addAssets('client/lib/weather-icons/font/weathericons-regular-webfont.woff', 'client')
 	// api.addAssets('client/lib/weather-icons/font/weathericons-regular-webfont.woff2', 'client')
 	// api.addFiles('client/lib/whirl/dist/whirl.css', 'client')
-	// api.addFiles('client/lib/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css', 'client')
-	// api.addAssets('client/lib/x-editable/dist/bootstrap3-editable/img/clear.png', 'client')
-	// api.addAssets('client/lib/x-editable/dist/bootstrap3-editable/img/loading.gif', 'client')
-	// api.addFiles('client/lib/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.js', 'client')
-	// api.addFiles('client/lib/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js', 'client')
-	// api.addFiles('client/scripts/clear-storage.js', 'client')
+	api.addFiles('client/lib/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css', 'client');
+	api.addAssets('client/lib/x-editable/dist/bootstrap3-editable/img/clear.png', 'client');
+	api.addAssets('client/lib/x-editable/dist/bootstrap3-editable/img/loading.gif', 'client');
+	api.addFiles('client/lib/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.js', 'client');
+	api.addFiles('client/lib/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js', 'client');
+	api.addFiles('client/scripts/clear-storage.js', 'client');
 	// api.addFiles('client/scripts/constants.js', 'client')
-	// api.addFiles('client/scripts/fullscreen.js', 'client')
-	// api.addFiles('client/scripts/load-css.js', 'client')
+	api.addFiles('client/scripts/fullscreen.js', 'client');
+	api.addFiles('client/scripts/load-css.js', 'client');
 	// api.addFiles('client/scripts/maps-google.js', 'client')
 	// api.addFiles('client/scripts/maps-vector.init.js', 'client')
 	// api.addFiles('client/scripts/maps-vector.js', 'client')
@@ -184,160 +183,160 @@ Package.onUse(function (api) {
 	// api.addFiles('client/scripts/trigger-resize.js', 'client')
 	// api.addFiles('client/scripts/utils.js', 'client')
 	// api.addFiles('client/scripts/md5.min.js', 'client')
-	// api.addFiles('client/stylesheets/01_bootstrap.less', 'client')
-	// api.addFiles('client/stylesheets/02_app.less', 'client')
-	// api.addFiles('client/stylesheets/app/alerts.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/animate.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/bootstrap-reset.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/breadcrumbs.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/button-extra.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/calendar.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/chart-easypie.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/chart-flot.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/circles.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/datatable.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/docs.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/dropdown-extra.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/font-awesome.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/form-elements.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/form-imgcrop.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/form-tags.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/form-validation.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/form-wizard.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/gmap.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/half-float.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/jqgrid.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/layout-animation.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/layout-extra.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/layout.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/mailbox.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/masonry-grid.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/media-queries.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/nestable.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/notify.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/offsidebar.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/panels.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/placeholder.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/plugins.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/portlets.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/print.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/progress-extra.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/radial-bar.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/row-extra.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/settings.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/sidebar.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/slim-scroll.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/spinner.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/table-extras.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/table-grid.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/timeline.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/todo.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/top-navbar.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/typo.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/user-block.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/utils.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/vector-map.import.less', 'client')
-	// api.addFiles('client/stylesheets/app/widget.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/alerts.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/badges.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/bootstrap.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/breadcrumbs.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/button-groups.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/buttons.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/carousel.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/close.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/code.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/component-animations.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/dropdowns.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/forms.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/glyphicons.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/grid.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/input-groups.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/jumbotron.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/labels.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/list-group.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/media.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/modals.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/navbar.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/navs.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/normalize.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/pager.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/pagination.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/panels.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/popovers.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/print.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/progress-bars.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/responsive-embed.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/responsive-utilities.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/scaffolding.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/tables.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/theme.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/thumbnails.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/tooltip.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/type.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/utilities.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/variables.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/wells.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/alerts.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/background-variant.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/border-radius.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/buttons.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/center-block.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/clearfix.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/forms.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/gradients.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/grid-framework.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/grid.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/hide-text.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/image.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/labels.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/list-group.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/nav-divider.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/nav-vertical-align.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/opacity.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/pagination.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/panels.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/progress-bar.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/reset-filter.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/reset-text.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/resize.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/responsive-visibility.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/size.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/tab-focus.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/table-row.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/text-emphasis.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/text-overflow.import.less', 'client')
-	// api.addFiles('client/stylesheets/bootstrap/mixins/vendor-prefixes.import.less', 'client')
-	// api.addFiles('client/stylesheets/themes/theme-a.import.less', 'client')
-	// api.addFiles('client/stylesheets/themes/theme-b.import.less', 'client')
-	// api.addFiles('client/stylesheets/themes/theme-c.import.less', 'client')
-	// api.addFiles('client/stylesheets/themes/theme-d.import.less', 'client')
-	// api.addFiles('client/stylesheets/themes/theme-e.import.less', 'client')
-	// api.addFiles('client/stylesheets/themes/theme-f.import.less', 'client')
-	// api.addFiles('client/stylesheets/themes/theme-g.import.less', 'client')
-	// api.addFiles('client/stylesheets/themes/theme-h.import.less', 'client')
-	// api.addAssets('public/fonts/fontawesome-webfont.eot', 'client')
-	// api.addAssets('public/fonts/fontawesome-webfont.svg', 'client')
-	// api.addAssets('public/fonts/fontawesome-webfont.ttf', 'client')
-	// api.addAssets('public/fonts/fontawesome-webfont.woff', 'client')
-	// api.addAssets('public/fonts/fontawesome-webfont.woff2', 'client')
-	// api.addAssets('public/fonts/FontAwesome.otf', 'client')
-	// api.addAssets('public/fonts/Simple-Line-Icons.eot', 'client')
-	// api.addAssets('public/fonts/Simple-Line-Icons.svg', 'client')
-	// api.addAssets('public/fonts/Simple-Line-Icons.ttf', 'client')
-	// api.addAssets('public/fonts/Simple-Line-Icons.woff', 'client')
-	// api.addAssets('public/fonts/Simple-Line-Icons.woff2', 'client')
-	// api.addAssets('public/fonts/weathericons-regular-webfont.eot', 'client')
-	// api.addAssets('public/fonts/weathericons-regular-webfont.svg', 'client')
-	// api.addAssets('public/fonts/weathericons-regular-webfont.ttf', 'client')
-	// api.addAssets('public/fonts/weathericons-regular-webfont.woff', 'client')
-	// api.addAssets('public/fonts/weathericons-regular-webfont.woff2', 'client')
-	// api.addAssets('public/img/bootstrap-colorpicker/alpha-horizontal.png', 'client')
-	// api.addAssets('public/img/bootstrap-colorpicker/alpha.png', 'client')
-	// api.addAssets('public/img/bootstrap-colorpicker/hue-horizontal.png', 'client')
-	// api.addAssets('public/img/bootstrap-colorpicker/hue.png', 'client')
-	// api.addAssets('public/img/bootstrap-colorpicker/saturation.png', 'client')
+	api.addFiles('client/stylesheets/01_bootstrap.less', 'client');
+	api.addFiles('client/stylesheets/02_app.less', 'client');
+	api.addFiles('client/stylesheets/app/alerts.import.less', 'client');
+	api.addFiles('client/stylesheets/app/animate.import.less', 'client');
+	api.addFiles('client/stylesheets/app/bootstrap-reset.import.less', 'client');
+	api.addFiles('client/stylesheets/app/breadcrumbs.import.less', 'client');
+	api.addFiles('client/stylesheets/app/button-extra.import.less', 'client');
+	api.addFiles('client/stylesheets/app/calendar.import.less', 'client');
+	api.addFiles('client/stylesheets/app/chart-easypie.import.less', 'client');
+	api.addFiles('client/stylesheets/app/chart-flot.import.less', 'client');
+	api.addFiles('client/stylesheets/app/circles.import.less', 'client');
+	api.addFiles('client/stylesheets/app/datatable.import.less', 'client');
+	api.addFiles('client/stylesheets/app/docs.import.less', 'client');
+	api.addFiles('client/stylesheets/app/dropdown-extra.import.less', 'client');
+	api.addFiles('client/stylesheets/app/font-awesome.import.less', 'client');
+	api.addFiles('client/stylesheets/app/form-elements.import.less', 'client');
+	api.addFiles('client/stylesheets/app/form-imgcrop.import.less', 'client');
+	api.addFiles('client/stylesheets/app/form-tags.import.less', 'client');
+	api.addFiles('client/stylesheets/app/form-validation.import.less', 'client');
+	api.addFiles('client/stylesheets/app/form-wizard.import.less', 'client');
+	api.addFiles('client/stylesheets/app/gmap.import.less', 'client');
+	api.addFiles('client/stylesheets/app/half-float.import.less', 'client');
+	api.addFiles('client/stylesheets/app/jqgrid.import.less', 'client');
+	api.addFiles('client/stylesheets/app/layout-animation.import.less', 'client');
+	api.addFiles('client/stylesheets/app/layout-extra.import.less', 'client');
+	api.addFiles('client/stylesheets/app/layout.import.less', 'client');
+	api.addFiles('client/stylesheets/app/mailbox.import.less', 'client');
+	api.addFiles('client/stylesheets/app/masonry-grid.import.less', 'client');
+	api.addFiles('client/stylesheets/app/media-queries.import.less', 'client');
+	api.addFiles('client/stylesheets/app/nestable.import.less', 'client');
+	api.addFiles('client/stylesheets/app/notify.import.less', 'client');
+	api.addFiles('client/stylesheets/app/offsidebar.import.less', 'client');
+	api.addFiles('client/stylesheets/app/panels.import.less', 'client');
+	api.addFiles('client/stylesheets/app/placeholder.import.less', 'client');
+	api.addFiles('client/stylesheets/app/plugins.import.less', 'client');
+	api.addFiles('client/stylesheets/app/portlets.import.less', 'client');
+	api.addFiles('client/stylesheets/app/print.import.less', 'client');
+	api.addFiles('client/stylesheets/app/progress-extra.import.less', 'client');
+	api.addFiles('client/stylesheets/app/radial-bar.import.less', 'client');
+	api.addFiles('client/stylesheets/app/row-extra.import.less', 'client');
+	api.addFiles('client/stylesheets/app/settings.import.less', 'client');
+	api.addFiles('client/stylesheets/app/sidebar.import.less', 'client');
+	api.addFiles('client/stylesheets/app/slim-scroll.import.less', 'client');
+	api.addFiles('client/stylesheets/app/spinner.import.less', 'client');
+	api.addFiles('client/stylesheets/app/table-extras.import.less', 'client');
+	api.addFiles('client/stylesheets/app/table-grid.import.less', 'client');
+	api.addFiles('client/stylesheets/app/timeline.import.less', 'client');
+	api.addFiles('client/stylesheets/app/todo.import.less', 'client');
+	api.addFiles('client/stylesheets/app/top-navbar.import.less', 'client');
+	api.addFiles('client/stylesheets/app/typo.import.less', 'client');
+	api.addFiles('client/stylesheets/app/user-block.import.less', 'client');
+	api.addFiles('client/stylesheets/app/utils.import.less', 'client');
+	api.addFiles('client/stylesheets/app/vector-map.import.less', 'client');
+	api.addFiles('client/stylesheets/app/widget.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/alerts.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/badges.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/bootstrap.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/breadcrumbs.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/button-groups.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/buttons.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/carousel.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/close.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/code.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/component-animations.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/dropdowns.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/forms.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/glyphicons.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/grid.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/input-groups.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/jumbotron.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/labels.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/list-group.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/media.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/modals.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/navbar.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/navs.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/normalize.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/pager.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/pagination.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/panels.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/popovers.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/print.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/progress-bars.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/responsive-embed.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/responsive-utilities.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/scaffolding.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/tables.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/theme.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/thumbnails.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/tooltip.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/type.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/utilities.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/variables.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/wells.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/alerts.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/background-variant.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/border-radius.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/buttons.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/center-block.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/clearfix.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/forms.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/gradients.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/grid-framework.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/grid.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/hide-text.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/image.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/labels.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/list-group.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/nav-divider.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/nav-vertical-align.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/opacity.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/pagination.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/panels.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/progress-bar.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/reset-filter.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/reset-text.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/resize.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/responsive-visibility.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/size.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/tab-focus.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/table-row.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/text-emphasis.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/text-overflow.import.less', 'client');
+	api.addFiles('client/stylesheets/bootstrap/mixins/vendor-prefixes.import.less', 'client');
+	api.addFiles('client/stylesheets/themes/theme-a.import.less', 'client');
+	api.addFiles('client/stylesheets/themes/theme-b.import.less', 'client');
+	api.addFiles('client/stylesheets/themes/theme-c.import.less', 'client');
+	api.addFiles('client/stylesheets/themes/theme-d.import.less', 'client');
+	api.addFiles('client/stylesheets/themes/theme-e.import.less', 'client');
+	api.addFiles('client/stylesheets/themes/theme-f.import.less', 'client');
+	api.addFiles('client/stylesheets/themes/theme-g.import.less', 'client');
+	api.addFiles('client/stylesheets/themes/theme-h.import.less', 'client');
+	api.addAssets('public/fonts/fontawesome-webfont.eot', 'client');
+	api.addAssets('public/fonts/fontawesome-webfont.svg', 'client');
+	api.addAssets('public/fonts/fontawesome-webfont.ttf', 'client');
+	api.addAssets('public/fonts/fontawesome-webfont.woff', 'client');
+	api.addAssets('public/fonts/fontawesome-webfont.woff2', 'client');
+	api.addAssets('public/fonts/FontAwesome.otf', 'client');
+	api.addAssets('public/fonts/Simple-Line-Icons.eot', 'client');
+	api.addAssets('public/fonts/Simple-Line-Icons.svg', 'client');
+	api.addAssets('public/fonts/Simple-Line-Icons.ttf', 'client');
+	api.addAssets('public/fonts/Simple-Line-Icons.woff', 'client');
+	api.addAssets('public/fonts/Simple-Line-Icons.woff2', 'client');
+	api.addAssets('public/fonts/weathericons-regular-webfont.eot', 'client');
+	api.addAssets('public/fonts/weathericons-regular-webfont.svg', 'client');
+	api.addAssets('public/fonts/weathericons-regular-webfont.ttf', 'client');
+	api.addAssets('public/fonts/weathericons-regular-webfont.woff', 'client');
+	api.addAssets('public/fonts/weathericons-regular-webfont.woff2', 'client');
+	api.addAssets('public/img/bootstrap-colorpicker/alpha-horizontal.png', 'client');
+	api.addAssets('public/img/bootstrap-colorpicker/alpha.png', 'client');
+	api.addAssets('public/img/bootstrap-colorpicker/hue-horizontal.png', 'client');
+	api.addAssets('public/img/bootstrap-colorpicker/hue.png', 'client');
+	api.addAssets('public/img/bootstrap-colorpicker/saturation.png', 'client');
 
     //api.use('ecmascript@0.1.6');
 
