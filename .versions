@@ -69,10 +69,10 @@ iron:url@1.0.11
 jquery@1.11.8
 less@2.6.0
 livedata@1.0.18
-local-test:maka:comt-packages@0.0.5
+local-test:maka:comt-packages@0.0.7_2
 localstorage@1.0.9
 logging@1.0.12
-maka:comt-packages@0.0.5
+maka:comt-packages@0.0.7_2
 mdg:validation-error@0.5.1
 meteor@1.1.14
 minifier-js@1.1.11

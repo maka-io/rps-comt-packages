@@ -22,24 +22,28 @@ def get_filepaths(directory):
 # Define what directories should be monitored
 paths = ['client', 'public', 'localize']
 
+# Define what should be in files and what should be in assets
+assets = ['.png', '.ico', '.eot', '.svg', '.ttf', '.woff', 'woff2', '.gif', '.otf', '.psd']
+
 # Run the above function and store its results in a variable.
 target = open('filename.txt', 'w')
 
 for path in paths:
     full_file_paths = get_filepaths(path)
 
+    target.write('\t// %s \n' % path)
+    target.write("api.addAssets([\n")
     for file in full_file_paths:
-        if '.less' in file:
-            target.write("api.addFiles(\'%s\', 'client')\n\t" % file)
-        elif '.js' in file:
-            target.write("api.addFiles(\'%s\', 'client')\n\t" % file)
-        elif '.html' in file:
-            target.write("api.addFiles(\'%s\', 'client')\n\t" % file)
-        elif '.css' in file:
-            target.write("api.addFiles(\'%s\', 'client')\n\t" % file)
-        elif '.DS_Store' in file:
-            continue
-        else:
-            target.write("api.addAssets(\'%s\', 'client')\n\t" % file)
+        if any(x in file for x in assets) and '.DS_Store' not in file:
+            target.write("\t\'%s\',\n" % file)
+
+    target.write("\t], [\'client\']);\n\r")
+
+    target.write("api.addFiles([\n")
+    for file in full_file_paths:
+        if not any(x in file for x in assets) and '.DS_Store' not in file:
+            target.write("\t\'%s\',\n" % file)
+
+    target.write("\t], [\'client\']);\n\r")
 
 target.close()
